@@ -1,0 +1,61 @@
+<title> Noun Project </title>
+</head>
+<body>
+
+  <ul> 
+    <li class= "navli"><a href="#home">Home</a></li>
+    <li class= "navli"><a href="#pic1"> Red </a> </li>
+    <li class= "navli"><a href="#pic2"> Green </a>  </li>
+    <li class= "navli"><a href="#pic3"> Yellow </a>  </li>
+             
+  </ul>
+  <br>
+  <br>
+   <p id="home"> 
+    <center>
+  <h1> Apples </h1>
+    
+     <table>
+  <tr>
+    <th>Type</th>
+    <th>Taste</th>
+    <th>My Rating</th>
+  </tr>
+  <tr>
+    <td>Red Apples</td>
+    <td>Very sweet</td>
+    <td>9/10</td>
+  </tr>
+  <tr>
+    <td>Green Apples</td>
+    <td>Kind of Sour</td>
+    <td>8/10</td>
+  </tr>
+  <tr>
+    <td>Yellow/Gold Apples</td>
+    <td>Less Sweet</td>
+    <td>7/10</td>
+  </tr>
+</table>      
+  </center>
+  
+  <p id="pic1">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_tIKPMs1hPJlh9KNfnnvNuHELSDTAWzTJTy3WELa4Pku45OP-9_tKUlyh7poit06Jrg:https://usapple.org/wp-content/uploads/2019/10/apple-gala.png&usqp=CAU">
+    </p>
+    <br>
+  <br>
+    <p id="pic2"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvePW6FhcpcZwXRXZOf-N6iKKpaFY-PO36mh5O_czS6YvPR-EmK5Gk90RsFaqI2oRJ9PA:https://healthiersteps.com/wp-content/uploads/2021/12/green-apple-benefits.jpeg&usqp=CAU"> 
+  </p>
+    <br>
+  <br>
+  <p id="pic3">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt-KtoNvEojRGox79I9eeMLkBA5Wdb98lno9coJEUgOg&s">
+    </p>
+  
+  
+  
+</body>
+  
+</body>
+</html>
