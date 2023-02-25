@@ -1,0 +1,98 @@
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<h1> COME EAT AT </h1>
+<body>
+
+<div class="wrapper">
+  <div class="box a">🍕 Pizza Place 🍕 </div>
+  <div class="box b">
+ PIZZA PLACE IS THE BEST
+    <br>
+    <br>
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/T3AHBe0I0yc" title="Pizza - Promo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p> Pizza Place is open 24/7 with free delivery 🍕
+  
+  
+  </div>
+  <div class="box c">CHEESE:$100
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eF3C8n4vrBJxiEPzxREmvRdQlomgPJo3KOMQQ2h3W8FhVX6XnYdWTAJ_HqsCgrA3nBE&usqp=CAU">
+  </div>
+  <div class="box d">MEATS:$100
+   <img src="https://desktopcreation.com/pzzaco/wp-content/uploads/2017/10/meat_lovers_pizza_500-300x190.png"></div>
+</div> 
+  
+<style>
+
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-size: 500%;
+  color: red
+}
+
+body {
+  margin: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 850px 850px 850px;
+    background-color: grey;
+  }
+
+  .box {
+    background-color: yellow;
+    color: red;
+    border-radius: 1000px;
+    padding: 100px;
+    font-size: 150%;
+  }
+
+  .a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-size: 1000%;
+  }
+  .b {
+    grid-column: 3 ;
+    grid-row: 1 / 3;
+    color: red;
+    font-size: 250%
+  }
+  .c {
+    grid-column: 1 ;
+    grid-row: 2 ;
+    font-size: 700%;;
+  }
+  .d {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 700%;
+  }
+
+.c:hover {
+  background-color: red;
+  color: yellow;
+}
+
+.d:hover {
+  background-color: red;
+  color: yellow;
+}
+
+.a:hover {
+  background-color: red;
+  color: yellow;
+}
+
+.b:hover {
+  background-color: red;
+  color: yellow;
+}
