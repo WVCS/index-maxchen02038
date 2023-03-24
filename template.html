@@ -2,6 +2,38 @@
 
 <head>
   <title> On Demand Project </title>
+  <script>
+        let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+   </script>
 </head>
 <link rel="icon" type="image/x-icon" href="REPLACE">
 
@@ -35,30 +67,32 @@
 
   <br>
   <br>
-  <div class="slideshow-container">
+  <div class="wrapperslideshow">
+    <div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/2048px-Eo_circle_blue_number-1.svg.png" style="width:100%">
-      <div class="text">item 1</div>
-    </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/2048px-Eo_circle_blue_number-1.svg.png" style="width:100%">
+        <div class="text">item 1</div>
+      </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="https://media.istockphoto.com/id/475251515/vector/3d-shiny-red-number-2.jpg?s=612x612&w=0&k=20&c=oY4nzhBPaUUZ6OAudkWtWergdNrxD-G_8y4V4XAqSuQ=" style="width:100%">
-      <div class="text">item 2</div>
-    </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://media.istockphoto.com/id/475251515/vector/3d-shiny-red-number-2.jpg?s=612x612&w=0&k=20&c=oY4nzhBPaUUZ6OAudkWtWergdNrxD-G_8y4V4XAqSuQ=" style="width:100%">
+        <div class="text">item 2</div>
+      </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSAKWEcfzRwHwTk-bwv9nJuAJf7B5HJzLzsaWMHp6l2ihYC8v348KK7crfMskjuYKxSk:https://st.depositphotos.com/1001311/3411/i/950/depositphotos_34119619-stock-photo-3d-golden-number-collection-3.jpg&usqp=CAU" style="width:100%">
-      <div class="text">item 3</div>
-    </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSAKWEcfzRwHwTk-bwv9nJuAJf7B5HJzLzsaWMHp6l2ihYC8v348KK7crfMskjuYKxSk:https://st.depositphotos.com/1001311/3411/i/950/depositphotos_34119619-stock-photo-3d-golden-number-collection-3.jpg&usqp=CAU" style="width:100%">
+        <div class="text">item 3</div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
   </div>
   <br>
@@ -78,38 +112,6 @@
       <div>
       </div>
     </div>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-</script>
 </body>
 
 </html>
@@ -169,6 +171,12 @@ h1 {
   text-align: center;
   color: white;
   border: solid 4px black;
+}
+
+  
+.wrapperslideshow
+{
+ justify-content: space-evenly; 
 }
 
 .wrapper:hover,
