@@ -1,0 +1,312 @@
+<html>
+
+<head>
+  <title> On Demand Project </title>
+</head>
+<link rel="icon" type="image/x-icon" href="REPLACE">
+
+<body>
+
+  <nav>
+    <li class="navli"><a href="index.html">Home</a></li>
+    <li class="navli"><a href="https://crateandbasket.com/types-of-red-apples/"> nav1 </a></li>
+    <li class="navli"><a href="https://www.homefortheharvest.com/green-apples/"> nav2 </a></li>
+    <li class="navli"><a href="https://crateandbasket.com/types-of-yellow-apple-and-their-uses/"> nav3 </a> </li>
+  </nav>
+  <br>
+  <br>
+  <h1> Title </h1>
+
+  <div class="full">
+    <div class="wrapper">
+      item 1
+    </div>
+    <br>
+    <div class="wrapper2">
+      item 2
+    </div>
+    <br>
+    <div class="wrapper3">
+      item3
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/2048px-Eo_circle_blue_number-1.svg.png" style="width:100%">
+      <div class="text">item 1</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://media.istockphoto.com/id/475251515/vector/3d-shiny-red-number-2.jpg?s=612x612&w=0&k=20&c=oY4nzhBPaUUZ6OAudkWtWergdNrxD-G_8y4V4XAqSuQ=" style="width:100%">
+      <div class="text">item 2</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSAKWEcfzRwHwTk-bwv9nJuAJf7B5HJzLzsaWMHp6l2ihYC8v348KK7crfMskjuYKxSk:https://st.depositphotos.com/1001311/3411/i/950/depositphotos_34119619-stock-photo-3d-golden-number-collection-3.jpg&usqp=CAU" style="width:100%">
+      <div class="text">item 3</div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="bottom">
+    <br><br><br>
+    <div class="bottomgrid">
+      <div class="logo">
+        <br>
+        <img src="https://emmproduction.wpenginepowered.com/wp-content/themes/emm2018/images/EM-Logo.png">
+      </div>
+      <div class="about"><a href=https://e-m-marketing.com/about />About Us</a></div>
+      <div class="team"><a href=https://e-m-marketing.com/team />Team</div>
+      <div class="story"><a href=https://e-m-marketing.com/about#beginning>Our Story</div>
+      <div class="join"><a href=https://e-m-marketing.com/join-us />Join Us</div>
+      <div class="community"><a href=https://e-m-marketing.com/consultant-community />Community</div>
+      <div>
+      </div>
+    </div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+</script>
+</body>
+
+</html>
+
+<style>
+
+body {
+  background: antiquewhite;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  color: antiquewhite;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+}
+
+.full {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper,
+.wrapper2,
+.wrapper3 {
+  background: grey;
+  width: 31%;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: solid 4px black;
+}
+
+.wrapper:hover,
+.wrapper2:hover,
+.wrapper3:hover {
+  border: solid 10px black;
+}
+
+.bottom {
+  background-color: grey;
+}
+.bottomgrid {
+  display: grid;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.logo {
+  grid-column: 1;
+  grid-row: 1/5;
+  font-size: 200%;
+}
+.about {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 200%;
+}
+.team {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 200%;
+}
+.story {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 200%;
+}
+.join {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 200%;
+}
+.community {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 200%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 30%;
+  max-height: 30%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: black;
+  font-size: 400%;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .full {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    background: grey;
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper2 {
+    background: grey;
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper3 {
+    background: grey;
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .bottomgrid {
+    flex-direction: column;
+    display: inline;
+  }
+}
+</style>
+
