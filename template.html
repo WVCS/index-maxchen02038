@@ -116,6 +116,7 @@
 
 </html>
 
+  <style>
 body {
   background: antiquewhite;
 }
@@ -177,13 +178,49 @@ h1 {
   border: solid 10px black;
 }
 
-.wrapperslideshow {
-  justify-content: space-evenly;
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
+* {
+  box-sizing: border-box;
 }
 
+.slideshow-container {
+  margin: auto;
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: black;
+  font-size: 400%;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 .bottom {
   background-color: grey;
   align-items: center;
@@ -226,50 +263,6 @@ h1 {
   grid-column: 2;
   grid-row: 5;
   font-size: 200%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.slideshow-container {
-  max-width: 30%;
-  max-height: 30%;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.text {
-  color: black;
-  font-size: 400%;
-  padding: 8px 12px;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
 }
 
 @keyframes fade {
@@ -318,3 +311,4 @@ h1 {
     display: inline;
   }
 }
+  </style>
