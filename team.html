@@ -1,0 +1,339 @@
+<html>
+
+<head>
+  <title> Team/Group Project </title>
+</head>
+<link rel="icon" type="image/x-icon" href="REPLACE">
+
+<body>
+
+  <nav>
+    <li class="navli"><a href="index.html">Home</a></li>
+    <li class="navli"><a href="https://www.adidas.com/us/men-soccer-accessories?cm_mmc=AdieSEM_MSN-_-DSA-All%20Website-2-_-DSA-All_Website-X-General-_-39700073345342490&cm_mmca1=US&cm_mmca2=&ds_agid=58700008064042915&gclid=03d38a21901f1dcfa3ebee0e306ffeb5&gclsrc=3p.ds&msclkid=03d38a21901f1dcfa3ebee0e306ffeb5"> Merch </a></li>
+    <li class="navli"><a href="https://www.archives.gov/founding-docs/constitution"> Club Philosophy </a></li>
+    <li class="navli"><a href="https://www.youtube.com/watch?v=hUA5ze_X4_U"> Highlights </a></li>
+  </nav>
+  <br>
+  <br>
+  <h1> ⚽ USFG FC ⚽ </h1>
+
+  <div class="full">
+    <div class="wrapper">
+      Striker - Barrack "Mobamba"
+      <br>
+      <br>
+      <div class="engineer">
+        <img src="https://the18.com/sites/default/files/styles/photo_story_list_items_1016px_wide/public/photo-story-images/2010-Obama-Rapids.jpg?itok=RePR8t-d">
+      </div>
+    </div>
+    <br>
+    <div class="wrapper2">
+      Center Midfielder - D Trump
+      <br>
+      <br>
+      <div class="officer">
+        <img src="https://th.bing.com/th/id/OIP.4VzA-aO9UHAn9eSRALnv9AHaE8?w=254&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7">
+      </div>
+    </div>
+    <br>
+    <div class="wrapper3">
+      Goalie - Joe Biden
+      <br>
+      <br>
+      <div class="attend">
+        <img src="https://th.bing.com/th/id/OIP.1BR6rHRToQa2aNmKE9X3vQHaEH?w=328&h=182&c=7&r=0&o=5&dpr=1.2&pid=1.7">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <img src="" <br>
+  <br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw4FK8YcGvYbnCtu9wHzvy9mIOUAfLYaKlj9E5FSKFrrY4SlSFAfbLbTvVdcQ05jjxtzY:https://www.aerotime.aero/images/187800306_164659338930235_4263503273928674571_nnnn-1024x683.jpg&usqp=CAU" style="width:100%">
+      <div class="text">Right Wing - </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://th.bing.com/th/id/OIP.FEsiI2rLdW4rO3uVOdbYUQHaH8?w=160&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7" style="width:100%">
+      <div class="text">Left Wing - Abe</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-syEWfqH22a6vU8d_pqcLSXnERZ-bxDq1oc24Tt51x1zTUBzgK2gFCSi1c97yTEQ08oU:https://i.etsystatic.com/13836506/r/il/ceb997/1268492535/il_fullxfull.1268492535_dqo0.jpg&usqp=CAU" style="width:100%">
+      <div class="text">Captain/Center Defense George</div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <h2> The USFG FC offers programs for underpriveledged youth athletes </h2>
+    <iframe width="1029" height="576" src="https://www.youtube.com/embed/mUe2bZYMXNs" title="Raw Video: Obama Plays Soccer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+  
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+  </script>
+  
+</body>
+
+</html>
+
+<style>
+  body {
+  background: #ce4848;
+}
+
+h2 {
+  color: white;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+  color: white;
+}
+
+.full {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper,
+.wrapper2,
+.wrapper3 {
+  background: #4a4a4a;
+  width: 31%;
+  height: 50vh;
+  text-align: center;
+  color: black;
+  border: solid 4px #7883ef;
+}
+
+.wrapper:hover,
+.wrapper2:hover,
+.wrapper3:hover {
+  border: solid 10px #7883ef;
+}
+
+.wrapper4 {
+  background: grey;
+  width: 31%;
+  height: 80vh;
+  text-align: center;
+  color: white;
+  border: solid 4px black;
+}
+
+
+
+.engineer,
+.officer,
+.attend {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  margin: auto;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: black;
+  font-size: 400%;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.bottom {
+  background-color: grey;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottomgrid {
+  display: grid;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.logo {
+  grid-column: 1;
+  grid-row: 1/5;
+  height: 100%;
+  width: 100%;
+}
+.about {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 200%;
+}
+.team {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 200%;
+}
+.story {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 200%;
+}
+.join {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 200%;
+}
+.community {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 200%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .full {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    background: grey;
+    width: 65%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper2 {
+    background: grey;
+    width: 60%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper3 {
+    background: grey;
+    width: 60%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+</style>
