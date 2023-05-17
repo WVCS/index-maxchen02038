@@ -1,0 +1,217 @@
+<html>
+
+<head>
+  <title>Store project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://www.adidas.com/us/men">Shop</a></li>
+      <li><a href="https://about.nike.com/en">About Us</a></li>
+      <li><a href="https://www.adidas.com/us/help">Help</a></li>
+      <li>
+    </ul>
+  </nav>
+  <br>
+  <center>
+    <button type=" button" name="popbutton" onclick="alert('Balance: $1,000,000,000,000.00')"> 🛒 View Cart/Checkout</button>
+    <br><br><br>
+    <div id="search">
+      <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete">
+          <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+        </div>
+      </form>
+    </div>
+  </center>
+  <br><br><br><br>
+  <center>
+    <header>
+      <h1>Welcome to Sike Sports Store</h1>
+      <p>We sell the only three things that you need to succeed in your favorite sports.</p>
+    </header>
+    <section>
+      <h2>Featured Products (SALES)</h2>
+      <br>
+
+      <ul>
+        <li>
+          <img src="https://th.bing.com/th?id=OP.3rXCBJ0e8sMadA474C474&o=6&dpr=1.2&pid=21.1&w=500&h=400" alt="Product 1">
+          <h3>Michael Jordan Ball</h3>
+          <button type=" button" name="popbutton" onclick="alert('purchased')"> $100.00 MJ ball</button>
+        </li>
+        <br><br><br><br><br>
+        <li>
+          <img src="https://th.bing.com/th/id/OIP.I83BhDng8CfcEg9JOUe3lgHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="Product 2">
+          <h3>Ngolo Kante's Jersey</h3>
+          <button type=" button" name="popbutton" onclick="alert('purchased')"> $100.00 NK Jersey</button>
+        </li>
+        <br><br><br><br><br>
+        <li>
+          <img src="https://th.bing.com/th/id/OIP.Mr6s5xkstORHVEJPMGKbaAHaAy?w=447&h=48&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="Product 3">
+          <h3>Shohei Ohtani Bat</h3>
+          <button type=" button" name="popbutton" onclick="alert('purchased')"> $100.00 SO Bat </button>
+        </li>
+      </ul>
+    </section>
+    <br>
+    <br>
+    <br>
+    <img src="sike.png">
+    <br><br><br>
+    <p class="not-allowed">CLICK HERE FOR FREE STUFF LOL</p>
+  </center>
+</body>
+
+</html>
+
+<style>
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  float: right;
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.autocomplete {
+  background-color: grey;
+}
+
+#myInput {
+  width: 100%;
+  background-color: white; 
+}
+
+#search {
+  position: relative;
+  width:300px;
+}
+
+button {
+  background-color: gold;
+  color: white;
+  padding: 1%;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4), 0 17px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.not-allowed {cursor: not-allowed;}
+</style>
+
+<script>
+function autocomplete(inp, arr) {
+
+  var currentFocus;
+
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+
+      this.parentNode.appendChild(a);
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function(e) {
+
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+var autoAnswers = ["Pants", "Shirts", "Shoes", "Soccer", "Baseball", "Basketball", "Football", "Combat Sports", "Track/Running", "Aquatic Sports", "Tennis", "Golf", "Gym Equipment"];
+
+autocomplete(document.getElementById("myInput"), autoAnswers);
+</script>
