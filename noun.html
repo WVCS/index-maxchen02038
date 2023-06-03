@@ -133,15 +133,6 @@
 </html>
     
  <style>
-   h1 {
-  text-align: center;
-  color: blue
-}
-body 
-{
-  background-color: orange
-}
-    
 ul {
   list-style-type: none;
   margin: 0;
@@ -152,17 +143,15 @@ ul {
   left: 0;
   position: fixed;
   width: 100%;
-  
 }
 
 li {
   float: left;
-  
 }
 
 li a {
   display: block;
-  color: grey;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -170,7 +159,141 @@ li a {
 
 li a:hover {
   font-family: ariel, sans-serif;
-  background-color: white;
-  color: black;
+  background-color: grey;
+  color: red;
 }
+
+h1 {
+  font-size: 200%;
+  color: red;
+  text-align: center;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+th {
+  height: 70px;
+  vertical-align: top;
+}
+
+td {
+  padding: 5px;
+  vertical-align: bottom;
+  text-align: center;
+}
+tr:hover {
+  background-color: red;
+  color: White;
+  font-size: 101%;
+}
+
+button {
+  background-color: gold;
+  color: white;
+  padding: 1%;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4), 0 17px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.full {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper,
+.wrapper2,
+.wrapper3 {
+  background: grey;
+  width: 31%;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: solid 4px black;
+}
+
+.wrapper:hover,
+.wrapper2:hover,
+.wrapper3:hover,
+.wrapper4:hover {
+  border: solid 10px black;
+}
+
+.wrapper4 {
+  background: grey;
+  width: 31%;
+  height: 80vh;
+  text-align: center;
+  color: white;
+  border: solid 4px black;
+}
+
+
+
+.engineer,
+.officer,
+.attend {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1200px) {
+  .full {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    background: grey;
+    width: 65%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper2 {
+    background: grey;
+    width: 60%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper3 {
+    background: grey;
+    width: 60%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+  }
+
+  .wrapper4 {
+    background: grey;
+    width: 100%;
+    height: 900vh;
+    text-align: center;
+    color: white;
+    border: solid 4px black;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
  </style>
