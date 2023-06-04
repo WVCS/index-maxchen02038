@@ -133,7 +133,8 @@
 </html>
     
  <style>
-ul {
+
+   ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -143,6 +144,7 @@ ul {
   left: 0;
   position: fixed;
   width: 100%;
+  z-index: 9999; 
 }
 
 li {
@@ -163,9 +165,10 @@ li a:hover {
   color: red;
 }
 
-h1 {
+h1local {
   font-size: 200%;
-  color: red;
+  font-weight: bold;
+  color: green;
   text-align: center;
 }
 
@@ -214,6 +217,10 @@ button:hover {
   justify-content: space-evenly;
 }
 
+carousel-inner{
+  z-index: 9998; 
+}
+
 .wrapper,
 .wrapper2,
 .wrapper3 {
@@ -240,8 +247,6 @@ button:hover {
   color: white;
   border: solid 4px black;
 }
-
-
 
 .engineer,
 .officer,
@@ -295,5 +300,6 @@ button:hover {
     justify-content: space-evenly;
   }
 }
+
 
  </style>
