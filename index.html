@@ -1,4 +1,3 @@
-
 <html>
  <head> 
    <title> Max's Website </title>
@@ -8,6 +7,8 @@
   <body>
    
 <nav>
+  
+ 
     <li class= "navli"><a href="index.html">Home</a></li>
     <li class= "navli"><a href="noun.html"> Noun Project </a> </li>
     <li class= "navli"><a href="convince.html"> Convince Project </a> </li>
@@ -20,12 +21,47 @@
   </nav>
    <center>
        <h2><i> Max's website </i></h2>
-   
+   <div id="circle">
 <img src="webdesign thing.png">
-
+     </div>
+     <br><br><br>
+     
+     <div id="left">
+     <h3> Noun project </h3>
+     <a href="noun.html"> 🍎 </a>
+     
+     <h3> Food project </h3>
+     <a href="food.html"> 🍕 </a>  
+       
+     <h3> On demand </h3>    
+     <a href="template.html"> 🛫 </a>  
+       
+       <h3> Convince project </h3>
+     <a href="convince.html"> 🤖 </a>
+     
+     <h3> Amusement park project </h3>
+     <a href="zoo.html"> 🦍 </a>
+     </div>
+     
+     <div id="right">
+       
+     <h3> Event project </h3>
+     <a href="event.html"> 🎵 </a>
+     
+     
+     <h3> Team project </h3>     
+     <a href="team.html"> ⚽ </a>
+     
+     
+     <h3> Store project </h3>
+     <a href="store.html"> 🤑 </a>
+       </div> 
+         </body>     
 </html>
-<style>
- nav {
+
+ <style>
+  
+nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -53,7 +89,60 @@ li a {
 li a:hover {
   font-family: ariel, sans-serif;
   background-color: grey;
-  color: red;
+  color: black;
 }
- 
-   </style>
+
+body {
+  background-color: antiquewhite;
+}
+
+#left {
+  animation-timing-function: linear;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  animation: across 6s infinite;
+}
+
+@keyframes across {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 1444px;
+  }
+}
+
+#right {
+  animation-timing-function: linear;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  animation: across 6s infinite;
+  animation-name: right;
+}
+
+@keyframes right {
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: 1444px;
+  }
+}
+
+#circle {
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+ </style>
