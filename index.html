@@ -21,9 +21,9 @@
   </nav>
    <center>
        <h2><i> Max's website </i></h2>
-   <div id="circle">
+
 <img src="webdesign thing.png">
-     </div>
+
      <br><br><br>
      
      <div id="left">
@@ -56,8 +56,16 @@
      <h3> Store project </h3>
      <a href="store.html"> 🤑 </a>
        </div> 
-    
-    <h3> CHALLENGE TRY TO CLICK ON THE NAVS </h3>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div id="speed">
+       
+        <h3> CLICK ME </h3>     
+     <button type=" button" name="popbutton" onclick="alert('CONGRATS')"> ⭐ </button>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h3> CHALLENGE: TRY TO CLICK ON THE STAR!!! </h3>
+     <buttonlocal type=" button" name="popbutton" onclick="alert('HINT: line up the mouse to wear the star pops out to the right and try to click really fast when it pops out')"> 🥚 </buttonlocal>
+     
          </body>     
 </html>
 
@@ -135,13 +143,13 @@ body {
   }
 }
 
-#circle {
+#speed {
   position: relative;
-  animation: myfirst 5s linear 2s infinite alternate;
+  animation: speed 1.2s linear infinite;
 }
 
-@keyframes myfirst {
-  0%   {left:0px; top:0px;}
+@keyframes speed {
+  0%   {right:200px; top:0px;}
   25%  {left:200px; top:0px;}
   50%  {left:200px; top:200px;}
   75%  {left:0px; top:200px;}
